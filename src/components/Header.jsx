@@ -2,11 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const activeLink = "bg-red-500 px-3 py-1 rounded";
+  const activeLink = "bg-red-600 px-3 py-1 rounded";
   const normalLink = "px-3 py-1";
   return (
     <div className=" bg-cyan-500 text-white">
-      <nav className="flex justify-between items-center max-w-[1100px] mx-auto px-3 py-2">
+      <nav className="flex justify-between items-center container mx-auto px-3 py-2">
         <div>
           <NavLink to="/home" className="text-2xl font-bold">
             Tech Quiz
