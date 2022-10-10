@@ -6,7 +6,7 @@ const Header = () => {
   const normalLink = "px-3 py-1";
   return (
     <div className=" bg-cyan-500 text-white">
-      <nav className="flex justify-between items-center container mx-auto px-3 py-2">
+      <nav className="flex justify-between items-center container mx-auto px-3 py-4">
         <div>
           <NavLink to="/home" className="text-2xl font-bold">
             Tech Quiz
