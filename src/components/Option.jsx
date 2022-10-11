@@ -1,9 +1,14 @@
 import React from "react";
 
-const Option = ({ option, id }) => {
+const Option = ({ option, name, handleAnswer }) => {
   return (
     <div className="flex gap-3 items-center mt-2">
-      <input type="radio" name={id} className="radio radio-accent radio-sm" />
+      <input
+        onClick={() => handleAnswer(option)}
+        type="radio"
+        name={name}
+        className="radio radio-accent radio-sm"
+      />
       <p>{option}</p>
     </div>
   );

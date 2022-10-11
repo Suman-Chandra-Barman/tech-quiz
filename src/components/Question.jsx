@@ -13,6 +13,16 @@ const Question = ({ quiz, idx }) => {
       position: "top-center",
       autoClose: 1500,
     });
+  const handleAnswer = (ans) => {
+    if (correctAnswer === ans) {
+      toast.success("Correct answer!", {
+        position: "top-center",
+        autoClose: 1000,
+      });
+    } else {
+      toast.error("Wrong answer!", { position: "top-center", autoClose: 1000 });
+    }
+  };
 
   return (
     <div className="border max-w-[700px] mx-auto my-10 rounded-lg p-5 shadow-md">
@@ -30,7 +40,12 @@ const Question = ({ quiz, idx }) => {
       </div>
       <div>
         {options.map((option, idx) => (
-          <Option key={idx} option={option} id={id} />
+          <Option
+            key={idx}
+            option={option}
+            name={id}
+            handleAnswer={handleAnswer}
+          />
         ))}
       </div>
     </div>
