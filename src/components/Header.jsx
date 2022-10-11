@@ -12,7 +12,7 @@ const Header = () => {
             Tech Quiz
           </NavLink>
         </div>
-        <div className="flex justify-between items-center gap-3">
+        <div>
           <NavLink
             to="/home"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}

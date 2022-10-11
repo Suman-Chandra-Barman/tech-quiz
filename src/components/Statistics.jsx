@@ -4,11 +4,10 @@ import { XAxis, YAxis, Tooltip, Legend, BarChart, Bar } from "recharts";
 
 const Statistics = () => {
   const quizData = useLoaderData();
-  console.log(quizData.data);
 
   return (
-    <div className="w-1/2 mx-auto my-10">
-      <BarChart width={500} height={300} data={quizData.data}>
+    <div className="flex justify-center my-10">
+      <BarChart width={350} height={300} data={quizData.data}>
         <Bar dataKey="total"></Bar>
         <XAxis dataKey="name"></XAxis>
         <YAxis></YAxis>

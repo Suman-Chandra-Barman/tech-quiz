@@ -6,7 +6,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Question = ({ quiz, idx }) => {
   const { id, correctAnswer, question, options } = quiz;
-  console.log(quiz);
 
   const showCorrectAns = () =>
     toast.success(`Correct answer : ${correctAnswer}`, {
