@@ -23,7 +23,7 @@ const QuizTopics = ({ quiz }) => {
               className="btn btn-sm btn-info text-white w-full"
             >
               Start Practice
-              <ArrowLongRightIcon class="h-5 w-5 text-white font-bold ml-3" />
+              <ArrowLongRightIcon className="h-5 w-5 text-white font-bold ml-3" />
             </button>
           </div>
         </div>
