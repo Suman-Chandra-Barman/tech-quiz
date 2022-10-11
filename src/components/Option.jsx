@@ -1,7 +1,6 @@
 import React from "react";
 
 const Option = ({ option }) => {
-  console.log(option);
   return (
     <div className="flex gap-3 items-center mt-2">
       <input

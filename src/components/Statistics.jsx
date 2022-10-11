@@ -1,11 +1,9 @@
 import React from "react";
+import { useLoaderData } from "react-router-dom";
 
 const Statistics = () => {
-  return (
-    <div>
-      <h3>This is statistics page</h3>
-    </div>
-  );
+  const quizData = useLoaderData();
+  return <div>{quizData.data.map((quiz) => console.log(quiz.total))}</div>;
 };
 
 export default Statistics;

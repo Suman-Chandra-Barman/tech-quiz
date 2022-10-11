@@ -20,7 +20,7 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/topics"
+            to="/topics/1"
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
           >
             Topics
